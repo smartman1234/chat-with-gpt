@@ -103,19 +103,19 @@ export default function SettingsDrawer(props: SettingsDrawerProps) {
                     <Tabs.List grow={small}>
                         <Tabs.Tab value="chat">Chat</Tabs.Tab>
                         <Tabs.Tab value="speech">Speech</Tabs.Tab>
-                        <Tabs.Tab value="ui">UI</Tabs.Tab>
+                        {/* <Tabs.Tab value="ui">UI</Tabs.Tab> */}
                         <Tabs.Tab value="user">User</Tabs.Tab>
                     </Tabs.List>
                     <ChatOptionsTab />
                     <SpeechOptionsTab />
-                    <UIPreferencesTab />
+                    {/* <UIPreferencesTab /> */}
                     <UserOptionsTab />
                 </Tabs>
                 <div id="save">
                     <Button variant="light" fullWidth size="md" onClick={close}>
-                        <FormattedMessage defaultMessage={"Save and Close"} 
+                        <FormattedMessage defaultMessage={"Save and Close"}
                             description="Label for the button that closes the Settings screen, saving any changes"
-                            />
+                        />
                     </Button>
                 </div>
             </Container>

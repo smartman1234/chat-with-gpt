@@ -1,6 +1,6 @@
-# Chat with GPT
+# ExtraGPT
 
-Chat with GPT is an open-source, unofficial ChatGPT app with extra features and more ways to customize your experience. It connects ChatGPT with ElevenLabs to give ChatGPT a realistic human voice.
+ExtraGPT is an open-source, unofficial ChatGPT app with extra features and more ways to customize your experience. It connects ChatGPT with ElevenLabs to give ChatGPT a realistic human voice.
 
 Try out the hosted version at: https://www.chatwithgpt.ai
 
@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/127109874/223613258-0c4fef2e-1d05-43a1
 
 ### OpenAI
 
-To get started with Chat with GPT, you will need to add your OpenAI API key on the settings screen. Click "Connect your OpenAI account to get started" on the home page to begin. Once you have added your API key, you can start chatting with ChatGPT.
+To get started with ExtraGPT, you will need to add your OpenAI API key on the settings screen. Click "Connect your OpenAI account to get started" on the home page to begin. Once you have added your API key, you can start chatting with ChatGPT.
 
 Your API key is stored only on your device and is never transmitted to anyone except OpenAI. Please note that OpenAI API key usage is billed at a pay-as-you-go rate, separate from your ChatGPT subscription.
 
@@ -53,7 +53,7 @@ Then navigate to http://localhost:3000 to view the app.
 
 For convenience, you can store your API keys on your computer instead of entering them in the browser.
 
-*Warning:* Be very careful doing this if anyone else has access to your self-hosted version of the app. They will be able to use the app through your API key as well.
+_Warning:_ Be very careful doing this if anyone else has access to your self-hosted version of the app. They will be able to use the app through your API key as well.
 
 Create a file called `config.yaml` in your `data` folder with the following contents:
 
@@ -75,4 +75,4 @@ docker pull ghcr.io/cogentapps/chat-with-gpt:release
 
 ## License
 
-Chat with GPT is licensed under the MIT license. See the LICENSE file for more information.
+ExtraGPT is licensed under the MIT license. See the LICENSE file for more information.

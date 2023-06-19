@@ -13,7 +13,7 @@ export const globalOptions: OptionGroup[] = [
     parameterOptions,
     inputOptions,
     whisperOptions,
-    ttsServiceOptions,
+    // ttsServiceOptions,
 ];
 
 const optionsForQuickSettings: Option[] = [];

@@ -53,7 +53,10 @@ export default function MessageInput(props: MessageInputProps) {
         stopRecording,
     } = useWhisper({
         apiKey: openAIApiKey || ' ',
-        streaming: false,
+        streaming: true,
+        whisperConfig: {
+            language: 'en'
+        }
     });
 
     const navigate = useNavigate();

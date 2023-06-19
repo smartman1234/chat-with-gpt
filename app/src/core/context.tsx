@@ -43,7 +43,7 @@ export function useCreateAppContext(): Context {
     const dispatch = useAppDispatch();
 
     intl = useIntl();
-    
+
     const { pathname } = useLocation();
     const isHome = pathname === '/';
     const isShare = pathname.startsWith('/s/');
@@ -77,7 +77,7 @@ export function useCreateAppContext(): Context {
 
     const onNewMessage = useCallback(async (message?: string) => {
         resetAudioContext();
-        
+
         if (isShare) {
             return false;
         }
@@ -115,27 +115,27 @@ export function useCreateAppContext(): Context {
         }
 
         // if (chatManager.has(id)) {
-            // chatManager.sendMessage({
-            //     chatID: id,
-            //     content: message.trim(),
-            //     requestedParameters: {
-            //         ...parameters,
-            //         apiKey: openaiApiKey,
-            //     },
-            //     parentID: currentChat.leaf?.id,
-            // });
+        // chatManager.sendMessage({
+        //     chatID: id,
+        //     content: message.trim(),
+        //     requestedParameters: {
+        //         ...parameters,
+        //         apiKey: openaiApiKey,
+        //     },
+        //     parentID: currentChat.leaf?.id,
+        // });
         // } else {
         //     await chatManager.createChat(id);
 
-            chatManager.sendMessage({
-                chatID: id,
-                content: message.trim(),
-                requestedParameters: {
-                    ...parameters,
-                    apiKey: openaiApiKey,
-                },
-                parentID: currentChat.leaf?.id,
-            });
+        chatManager.sendMessage({
+            chatID: id,
+            content: message.trim(),
+            requestedParameters: {
+                ...parameters,
+                apiKey: openaiApiKey,
+            },
+            parentID: currentChat.leaf?.id,
+        });
         // }
 
         return id;
@@ -171,7 +171,7 @@ export function useCreateAppContext(): Context {
 
     const editMessage = useCallback(async (message: Message, content: string) => {
         resetAudioContext();
-        
+
         if (isShare) {
             return false;
         }
@@ -249,8 +249,8 @@ export function useAppContext() {
 export function AppContextProvider(props: { children: React.ReactNode }) {
     const context = useCreateAppContext();
     return <AppContext.Provider value={context}>
-        <TTSContextProvider>
-            {props.children}
-        </TTSContextProvider>
+        {/* <TTSContextProvider> */}
+        {props.children}
+        {/* </TTSContextProvider> */}
     </AppContext.Provider>;
 }
