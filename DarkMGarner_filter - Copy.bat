@@ -1,1 +1,0 @@
-git filter-branch -f --env-filter "GIT_AUTHOR_NAME='DavidDarkLover' GIT_AUTHOR_EMAIL='davidcross66u@gmail.com' GIT_COMMITTER_NAME='DavidDarkLover' GIT_COMMITTER_EMAIL='davidcross66u@gmail.com'" HEAD
